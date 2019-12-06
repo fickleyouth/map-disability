@@ -1,0 +1,70 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+#mainNav {
+ font-family: Georgia;
+}
+
+.bg-primary{
+ background-image: url(../img/17ccaboverde.jpg);
+ background-color: #6897BB;
+}
+
+.text-center{
+  background-color: #343a40;
+  opacity: 0.75;
+}
+
+header {
+  padding: 154px 0 100px;
+  font-family: Georgia;
+}
+
+ .table {
+      width: 50%;
+    }
+		table,
+		th {
+			text-align: center;
+		}
+		/*make odd rows lightblue*/
+		.table-striped > tbody > tr:nth-child(odd) > td {
+			background-color: #6897BB;
+		}
+ 
+footer {
+    font-family: Georgia;
+    font-size: 10px;
+  }
+ 
+footer a
+
+{ 
+color: grey;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px;
+  }
+  
+section {
+  padding: 150px 0;
+}
+
+ table {
+      width: 100%;
+    }
+		table,
+		th {
+			text-align: center;
+		}
+		/*make odd rows lightblue*/
+		.table-striped > tbody > tr:nth-child(odd) > td {
+			background-color: #f4f7ff;
+		}
+
+}

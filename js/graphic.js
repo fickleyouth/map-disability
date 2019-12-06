@@ -8,8 +8,8 @@ var key =
 //punctuation or numbers in your column name
 //"title" is the column name you want to appear in the published table
 var columns = [
-  {"data": "surname","title": "Surname"},
-  {"data": "forename","title": "Forename"},
+  {"data": "last_name","title": "Surname"},
+  {"data": "first_name","title": "Forename"},
   {"data": "image","title": "Picture"},
   {"data": "description","title": "Description"},
   {"data": "email","title": "Email Address"},

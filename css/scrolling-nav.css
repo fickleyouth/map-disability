@@ -5,22 +5,28 @@
  */
 
 #mainNav {
- font-family: Georgia;
+ background-color:#B0C4DE;
 }
+nav .navbar-nav li a{
+  color: white!important;
+  }
+
+  nav .navbar-nav li a:hover {
+    color:   #7ab9f3 !important;
+    }
+
+
 
 .bg-primary{
- background-image: url(../img/17ccaboverde.jpg);
- background-color: #6897BB;
+ background-color: #d6eaf8;
 }
 
-.text-center{
-  background-color: #343a40;
-  opacity: 0.75;
+h1{
+  color:  #212f3c;
 }
 
 header {
   padding: 154px 0 100px;
-  font-family: Georgia;
 }
 
  .table {
@@ -34,23 +40,24 @@ header {
 		.table-striped > tbody > tr:nth-child(odd) > td {
 			background-color: #6897BB;
 		}
- 
-footer {
-    font-family: Georgia;
-    font-size: 10px;
-  }
- 
-footer a
 
-{ 
-color: grey;
+footer p
+{
+  color: black !important;
 }
+
+footer a:hover
+
+{
+  color: #7ab9f3 !important;
+  }
+
 
 @media (min-width: 992px) {
   header {
     padding: 156px 0 100px;
   }
-  
+
 section {
   padding: 150px 0;
 }

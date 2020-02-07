@@ -10,21 +10,18 @@ var key =
 var columns = [
   {"data": "lastName","title": "Surname"},
   {"data": "firstName","title": "Forename"},
-  {"data": "image","title": "Picture"},
-  {"data": "description","title": "Description"},
   {"data": "email","title": "Email Address"},
   {"data": "website", "title": "Website"},
   {"data": "title", "title":"Title"},
   {"data": "officeAdd", "title":"Office Address"},
-  {"data": "streetAdd", "title":"Street Address"},
   {"data": "offPhone", "title":"Office Phone"},
   {"data": "deptOffice","title":"Department or Office"},
   {"data": "schUnit","title": "School or Unit"},
   {"data": "keywords", "title": "Keywords"},
-  {"data": "statement"," title":"Statement"},
-  {"data": "orgProj"," title":"Department or Office"}
+  {"data": "statement", "title": "Statement"},
+  {"data": "orgProj", "title": "Organization or Project"}
 
-];
+    ];
 
 
 $(document).ready(function() {
@@ -46,22 +43,32 @@ $(document).ready(function() {
     //select main div and put a table there
     //use bootstrap css to customize table style: http://getbootstrap.com/css/#tables
     $('#graphic').html(
-      '<table cellpadding="0" cellspacing="0" border="0" class="table table-responsive table-bordered table-hover" id="mySelection"></table>'
+      '<table cellpadding="0" cellspacing="0" border="0" class="table table-hover table-bordered dt-responsive table-responsive nowrap" style="width:100%" id="mySelection"></table>'
     );
 
     //initialize the DataTable object and put settings in
     $("#mySelection").DataTable({
-      "autoWidth": true,
-      "data": data,
-      "columns": columns,
-      "order": [
+      //"autoWidth": true,
+      fixedHeader: {
+            header: true,
+            footer: true
+        },
+      //"responsive": true,
+      data: data,
+      columns: columns,
+      scrollY:  500,
+      //scrollX:  true,
+    //deferRender:    true,
+    //scroller:       true,
+      order: [
         [2, "desc"]
       ], //order on second column
-      "pagingType": "simple" //no page numbers
+      //"pagingType": "simple", //no page numbers
         //uncomment these options to simplify your table
-        //"paging": false,
+        //"paging": false
         //"searching": false,
         //"info": false
+
     });
   }
 });

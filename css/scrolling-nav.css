@@ -4,22 +4,18 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
-#mainNav {
+#mainHeader {
  background-color:#B0C4DE;
 }
+
 nav .navbar-nav li a{
   color: white!important;
   }
 
-  nav .navbar-nav li a:hover {
-    color:   #7ab9f3 !important;
+nav .navbar-nav li a:hover {
+    color:   #7ab9f3!important;
     }
 
-
-
-.bg-primary{
- background-color: #d6eaf8;
-}
 
 h1{
   color:  #212f3c;
@@ -36,11 +32,11 @@ header {
 		th {
 			text-align: center;
 		}
-		/*make odd rows lightblue*/
+		/*make odd rows lightblue
 		.table-striped > tbody > tr:nth-child(odd) > td {
 			background-color: #6897BB;
 		}
-
+*/
 footer p
 {
   color: black !important;
@@ -69,9 +65,9 @@ section {
 		th {
 			text-align: center;
 		}
-		/*make odd rows lightblue*/
+		/*make odd rows lightblue
 		.table-striped > tbody > tr:nth-child(odd) > td {
 			background-color: #f4f7ff;
 		}
-
+*/
 }

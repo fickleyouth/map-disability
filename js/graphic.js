@@ -11,16 +11,9 @@ var columns = [
   {"data": "lastName","title": "Surname"},
   {"data": "firstName","title": "Forename"},
   {"data": "email","title": "Email Address"},
-  {"data": "website", "title": "Website"},
   {"data": "title", "title":"Title"},
-  {"data": "officeAdd", "title":"Office Address"},
-  {"data": "offPhone", "title":"Office Phone"},
   {"data": "deptOffice","title":"Department or Office"},
-  {"data": "schUnit","title": "School or Unit"},
-  {"data": "keywords", "title": "Keywords"},
-  {"data": "statement", "title": "Statement"},
-  {"data": "orgProj", "title": "Organization or Project"}
-
+  {"data": "keywords", "title": "Keywords"}
     ];
 
 

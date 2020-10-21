@@ -15,7 +15,8 @@ nav .navbar-nav li a{
 nav .navbar-nav li a:hover {
     color:   #7ab9f3!important;
     }
-
+.index
+padding: 154px 0 100px;
 
 h1{
   color:  #212f3c;
@@ -23,6 +24,11 @@ h1{
 
 header {
   padding: 154px 0 100px;
+}
+
+.index {
+padding: 100px 0 50px;
+
 }
 
  .table {

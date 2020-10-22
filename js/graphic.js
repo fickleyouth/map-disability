@@ -8,11 +8,7 @@ var key =
 //punctuation or numbers in your column name
 //"title" is the column name you want to appear in the published table
 var columns = [
-  {"data": "lastName","title": "Surname"
-  fnCreatedCell: function (nTd, sData, oData, iRow, iCol) {
-        $(nTd).html("<a href='/bios.html#"+oData.lastname+"'>"+oData.lastname+"</a>");
-    }
-  },
+  {"data": "lastName","title": "Surname"},
   {"data": "firstName","title": "Forename"},
   {"data": "email","title": "Email Address"},
   {"data": "title", "title":"Title"},

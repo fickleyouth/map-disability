@@ -49,14 +49,6 @@ $(document).ready(function() {
       //"responsive": true,
       data: data,
       columns: columns,
-      columnDefs: [
-            {
-                "render": function ( data, type, row ) {
-                    return '<a href="'+data +;
-                },
-                "targets": 0
-            },
-        ]
       scrollY:  500,
       //scrollX:  true,
     //deferRender:    true,

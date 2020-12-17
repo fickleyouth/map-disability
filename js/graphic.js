@@ -49,13 +49,22 @@ $(document).ready(function() {
       //"responsive": true,
       data: data,
       columns: columns,
+      columnDefs: [
+            {
+                "render": function ( data, type, row ) {
+                    return '<a href="'+data +;
+                },
+                "targets": 0
+            },
+        ]
       scrollY:  500,
       //scrollX:  true,
     //deferRender:    true,
     //scroller:       true,
       order: [
         [2, "desc"]
-      ], //order on second column
+      ] //order on second column
+
       //"pagingType": "simple", //no page numbers
         //uncomment these options to simplify your table
         //"paging": false

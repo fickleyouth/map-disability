@@ -5,8 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content=">
+    <meta name="author" content=">
 
     <title>Mapping Disability Inclusion</title>
 
@@ -60,30 +60,37 @@
               <ul class="pagination alphabet">
                  <li class="page-item"><a class="page-link" href="#A">A</a></li>
                  <li class="page-item"><a class="page-link" href="#B">B</a></li>
-                 <li class="page-item"><a class="page-link" href="#C">C</a></li>
-                 <li class="page-item"><a class="page-link" href="#D">D</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#C">C</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#D">D</a></li>
                  <li class="page-item"><a class="page-link" href="#E">E</a></li>
-                 <li class="page-item"><a class="page-link" href="#F">F</a></li>
-                 <li class="page-item"><a class="page-link" href="#G">G</a></li>
-                 <li class="page-item"><a class="page-link" href="#H">H</a></li>
-                 <li class="page-item"><a class="page-link" href="#I">I</a></li>
-                 <li class="page-item"><a class="page-link" href="#J">J</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#F">F</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#G">G</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#H">H</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#I">I</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#J">J</a></li>
                  <li class="page-item"><a class="page-link" href="#K">K</a></li>
-                 <li class="page-item"><a class="page-link" href="#L">L</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#L">L</a></li>
                  <li class="page-item"><a class="page-link" href="#M">M</a></li>
-                 <li class="page-item"><a class="page-link" href="#N">N</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#N">N</a></li>
                  <li class="page-item"><a class="page-link" href="#O">O</a></li>
-                 <li class="page-item"><a class="page-link" href="#P">P</a></li>
-                 <li class="page-item"><a class="page-link" href="#Q">Q</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#P">P</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#Q">Q</a></li>
                  <li class="page-item"><a class="page-link" href="#R">R</a></li>
-                 <li class="page-item"><a class="page-link" href="#S">S</a></li>
-                 <li class="page-item"><a class="page-link" href="#T">T</a></li>
-                 <li class="page-item"><a class="page-link" href="#U">U</a></li>
-                 <li class="page-item"><a class="page-link" href="#V">V</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#S">S</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#T">T</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#U">U</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#V">V</a></li>
                  <li class="page-item"><a class="page-link" href="#W">W</a></li>
-                 <li class="page-item"><a class="page-link" href="#X">X</a></li>
-                 <li class="page-item"><a class="page-link" href="#Y">Y</a></li>
-                 <li class="page-item"><a class="page-link" href="#Z">Z</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#X">X</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#Y">Y</a></li>
+                 <li class="page-item disabled"><a class="page-link disabled" href="#Z">Z</a></li>
+                 <script>
+                  $(function(){
+                    $('a.disabled').on('click',function(event){
+                     event.preventDefault();
+                    }).removeClass('disabled');
+                  });
+                 </script>
 	             </ul>
                </div>
                </nav>
@@ -99,17 +106,14 @@
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h2>A</h2>
-            <p id="Adams""class="lead">Robert Adams</p>
-          <p>
-            <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="portrait of Robert Adams">
-            <br>
+            <p id="Adams" class="lead">Robert Adams</p>
       			Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
       			Email : robadams@umich.edu<br>
       			Website : umich.edu<br>
-     			Title : Professer of XYZ<br>
-     			Office Address : 209 Hatcher North <br>
-     			Street Address : 913 S. University Avenue
-          Ann Arbor, MI 48109-1190<br>
+     			  Title : Professer of XYZ<br>
+     			  Office Address : 209 Hatcher North <br>
+     			  Street Address : 913 S. University Avenue
+            Ann Arbor, MI 48109-1190<br>
       			Office Phone : (734) 555-5555<br>
       			Department or Program : A. Alfred Taubman College of Architecture and Urban Planning<br>
       			School : A. Alfred Taubman College of Architecture and Urban Planning<br>
@@ -125,34 +129,30 @@
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h2>B</h2>
-            <p id="Berliss-Vincent""class="lead">Jane Berliss-Vincent</p>
+            <p id="Berliss-Vincent" class="lead">Jane Berliss-Vincent</p>
           <p>
-            <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="portrait of Jane Berliss-Vincent">
-            <br>
       			Description: In tristique enim vitae facilisis aliquet.<br>
       			Email : jbvincen@umich.edu<br>
       			Website : umich.edu<br>
-     			Title : Director of ABC<br>
-     			Office Address : 3145 North Quadrangle<br>
-     			Street Address : 105 South State Street
-          Ann Arbor, MI 48109-1285<br>
+     			  Title : Director of ABC<br>
+     			  Office Address : 3145 North Quadrangle<br>
+     			  Street Address : 105 South State Street
+            Ann Arbor, MI 48109-1285<br>
       			Office Phone : (734) 555-5555<br>
       			Department or Program : ITS Support Services<br>
       			School : ITS<br>
       			Organization or Project : CfDC, <br>
       			Statement : Phasellus vitae semper purus.
       	</p>
-   <p id="Brammer""class="lead">Ethriam Brammer</p>
+        <p id="Brammer"class="lead">Ethriam Brammer</p>
           <p>
-            <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="portrait of Ethriam Brammer">
-            <br>
       			Description: Lick the plastic bag.Donec nunc quam, placerat at diam ut, semper convallis orci. <br>
       			Email : ebrammer@umich.edu<br>
       			Website : umich.edu<br>
-     			Title : Assistant Dean of XYZ<br>
-     			Office Address : 3338 School of Education Building<br>
-     			Street Address : 610 East University Avenue
-          Ann Arbor, MI 48109-1259<br>
+     			  Title : Assistant Dean of XYZ<br>
+     			  Office Address : 3338 School of Education Building<br>
+     			  Street Address : 610 East University Avenue
+            Ann Arbor, MI 48109-1259<br>
       			Office Phone : (734) 555-5555<br>
       			Department or Program : Rackham Graduate School <br>
       			School : Rackham Graduate School <br>
@@ -186,17 +186,15 @@
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h2>E</h2>
-            <p id="Edelstein""class="lead">Jeff Edelstein</p>
+            <p id="Edelstein"class="lead">Jeff Edelstein</p>
          <p>
-           <img src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="portrait of Jeff Edelstein">
-           <br>
            Description:  In nec ante vel nunc auctor lacinia eu dignissim nisi.<br>
            Email : jeffrede@umich.edu<br>
            Website : umich.edu<br>
-         Title : Professer of XYZ<br>
-         Office Address : G-664 Haven Hall<br>
-         Street Address : 505 South State Street
-         Ann Arbor, MI 48109-1045<br>
+           Title : Professer of XYZ<br>
+           Office Address : G-664 Haven Hall<br>
+           Street Address : 505 South State Street
+           Ann Arbor, MI 48109-1045<br>
            Office Phone : (734) 555-5555<br>
            Department or Program : Library Research<br>
            School : Library<br>
@@ -248,16 +246,14 @@
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h2>J</h2>
-            <p id="Joque""class="lead">Justin Joque</p>
+            <p id="Joque" class="lead">Justin Joque</p>
           <p>
-            <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="portrait of Justin Joque">
-            <br>
       			Description:  Proin turpis justo, scelerisque sed volutpat in, consectetur vel dolor. <br>
       			Email : joque@umich.edu<br>
       			Website : umich.edu<br>
-     			Title : Director of ABC<br>
-     			Office Address : 209 Hatcher North <br>
-     			Street Address : 913 S. University Avenue
+     			  Title : Director of ABC<br>
+     			  Office Address : 209 Hatcher North <br>
+     			  Street Address : 913 S. University Avenue
             Ann Arbor, MI 48109-1190<br>
       			Office Phone : (734) 555-5555<br>
       			Department or Program : Rackham Graduate School <br>
@@ -274,17 +270,15 @@
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h2>K</h2>
-            <p id="Kline""class="lead">Christina Kline</p>
+            <p id="Kline" class="lead">Christina Kline</p>
           <p>
-            <img src="https://images.pexels.com/photos/326875/pexels-photo-326875.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="portrait of Christina Kline">
-            <br>
       			Description: Phasellus vitae semper purus.<br>
       			Email : cdtkline@umich.edu<br>
       			Website : umich.edu<br>
-     			Title : Assistant Dean of XYZ<br>
-     			Office Address : 3145 North Quadrangle<br>
-     			Street Address : 105 South State Street
-				Ann Arbor, MI 48109-1285<br>
+     			  Title : Assistant Dean of XYZ<br>
+     			  Office Address : 3145 North Quadrangle<br>
+     			  Street Address : 105 South State Street
+				    Ann Arbor, MI 48109-1285<br>
       			Office Phone : (734) 555-5555<br>
       			Department or Program : Library Research<br>
       			School : Library<br>
@@ -309,17 +303,15 @@
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h2>M</h2>
-            <p id="Marshall""class="lead">Megan Marshall</p>
+            <p id="Marshall"class="lead">Megan Marshall</p>
           <p>
-            <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="portrait of Megan Marshall">
-            <br>
       			Description: Pellentesque in nisl vehicula, posuere sem a, vehicula nulla. <br>
       			Email : megmarsh@umich.edu<br>
       			Website : umich.edu<br>
-     			Title : Professer of XYZ<br>
-     			Office Address : 3338 School of Education Building<br>
-     			Street Address : 610 East University Avenue
-          Ann Arbor, MI 48109-1259<br>
+     			  Title : Professer of XYZ<br>
+     			  Office Address : 3338 School of Education Building<br>
+     			  Street Address : 610 East University Avenue
+            Ann Arbor, MI 48109-1259<br>
       			Office Phone : (734) 555-5555<br>
       			Department or Program : A. Alfred Taubman College of Architecture and Urban Planning<br>
       			School : A. Alfred Taubman College of Architecture and Urban Planning<br>
@@ -344,17 +336,15 @@
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h2>O</h2>
-            <p id="Okanlami""class="lead">Oluwaferanmi Okanlami</p>
+            <p id="Okanlami"class="lead">Oluwaferanmi Okanlami</p>
           <p>
-            <img src="https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="portrait of Oluwaferanmi Okanlami">
-            <br>
       			Description: Aliquam consectetur lorem sed sapien laoreet, in euismod nibh vulputate. <br>
       			Email : okanlami@med.umich.edu<br>
       			Website : umich.edu<br>
-     			Title : Director of ABC<br>
-     			Office Address : G-664 Haven Hall<br>
-     			Street Address : 505 South State Street
-          Ann Arbor, MI 48109-1045<br>
+     			  Title : Director of ABC<br>
+     			  Office Address : G-664 Haven Hall<br>
+     			  Street Address : 505 South State Street
+            Ann Arbor, MI 48109-1045<br>
       			Office Phone : (734) 555-5555<br>
       			Department or Program : ITS Support Services<br>
       			School : ITS<br>
@@ -387,17 +377,15 @@
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h2>R</h2>
-            <p id="Rosen""class="lead">Stephanie Rosen</p>
+            <p id="Rosen"class="lead">Stephanie Rosen</p>
           <p>
-            <img src="https://images.pexels.com/photos/209037/pexels-photo-209037.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="portrait of Stephanie Rosen">
-            <br>
       			Description: Vestibulum hendrerit libero erat, nec sagittis augue iaculis eget<br>
       			Email : ssrosen@umich.edu<br>
       			Website : umich.edu<br>
-     			Title : Assistant Dean of XYZ<br>
-     			Office Address : 209 Hatcher North <br>
-     			Street Address : 913 S. University Avenue
-          Ann Arbor, MI 48109-1190<br>
+     			  Title : Assistant Dean of XYZ<br>
+     			  Office Address : 209 Hatcher North <br>
+     			  Street Address : 913 S. University Avenue
+            Ann Arbor, MI 48109-1190<br>
       			Office Phone : (734) 555-5555<br>
       			Department or Program : Library Research<br>
       			School : Library<br>
@@ -449,17 +437,15 @@
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <h2>W</h2>
-            <p id="Wiseman""class="lead">Ashley Wiseman</p>
+            <p id="Wiseman"class="lead">Ashley Wiseman</p>
          <p>
-           <img src="https://images.pexels.com/photos/290204/pexels-photo-290204.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="portrait of Ashley Wiseman">
-           <br>
            Description: Sed sodales vel leo eget mollis.<br>
            Email : wisemana@umich.edu<br>
            Website : umich.edu<br>
-         Title : Professer of XYZ<br>
-         Office Address : 3145 North Quadrangle<br>
-         Street Address : 105 South State Street
-         Ann Arbor, MI 48109-1285<br>
+           Title : Professer of XYZ<br>
+           Office Address : 3145 North Quadrangle<br>
+           Street Address : 105 South State Street
+           Ann Arbor, MI 48109-1285<br>
            Office Phone : (734) 555-5555<br>
            Department or Program : Rackham Graduate School <br>
            School : Rackham Graduate School <br>

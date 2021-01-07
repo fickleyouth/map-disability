@@ -10,7 +10,6 @@ var key =
 var columns = [
   {"data": "lastName","title": "Surname"},
   {"data": "firstName","title": "Forename"},
-  {"data": "email","title": "Email Address"},
   {"data": "title", "title":"Title"},
   {"data": "deptOffice","title":"Department or Office"},
   {"data": "keywords", "title": "Keywords"}
@@ -47,8 +46,21 @@ $(document).ready(function() {
             footer: true
         },
       //"responsive": true,
+      responsive: {
+        details: {
+            type: false
+        }
+    },
       data: data,
       columns: columns,
+      columnDefs: [ {
+        targets: 0,
+        data: "lastName",
+        render: function (data, type, row, meta)
+          {
+                return'<a href="bios.html#'+data+'">'+data+'</a>';
+              }
+              } ],
       scrollY:  500,
       //scrollX:  true,
     //deferRender:    true,

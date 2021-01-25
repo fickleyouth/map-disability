@@ -8,8 +8,10 @@ var key =
 //punctuation or numbers in your column name
 //"title" is the column name you want to appear in the published table
 var columns = [
+  {"data": "control","title": "View More"},
   {"data": "lastName","title": "Surname"},
   {"data": "firstName","title": "Forename"},
+  {"data": "email","title": "Email"},
   {"data": "title", "title":"Title"},
   {"data": "deptOffice","title":"Department or Office"},
   {"data": "keywords", "title": "Keywords"}
@@ -45,22 +47,21 @@ $(document).ready(function() {
             header: true,
             footer: true
         },
-      //"responsive": true,
-      responsive: {
-        details: {
-            type: false
-        }
-    },
+      responsive: true,
+      //responsive: {details: {type: false}},
       data: data,
       columns: columns,
-      columnDefs: [ {
-        targets: 0,
-        data: "lastName",
+      columnDefs: [
+        {
         render: function (data, type, row, meta)
           {
-                return'<a href="bios.html#'+data+'">'+data+'</a>';
-              }
-              } ],
+                return'<a href="bios.html#'+row["email"]+'">'+data+'</a>';
+                //return data +' ('+ row[1]+')';
+              },
+              targets: [1,3]
+            },
+           { visible: false,  targets: [ 3 ] }
+          ],
       scrollY:  500,
       //scrollX:  true,
     //deferRender:    true,

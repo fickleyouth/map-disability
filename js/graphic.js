@@ -8,7 +8,7 @@ var key =
 //punctuation or numbers in your column name
 //"title" is the column name you want to appear in the published table
 var columns = [
-  {"data": "control","title": "View More"},
+  {"data": "control","title": "Expand"},
   {"data": "lastName","title": "Surname"},
   {"data": "firstName","title": "Forename"},
   {"data": "email","title": "Email"},
@@ -37,7 +37,7 @@ $(document).ready(function() {
     //select main div and put a table there
     //use bootstrap css to customize table style: http://getbootstrap.com/css/#tables
     $('#graphic').html(
-      '<table cellpadding="0" cellspacing="0" border="0" class="table table-hover table-bordered dt-responsive table-responsive nowrap" style="width:100%" id="mySelection"></table>'
+      '<table cellpadding="0" cellspacing="0" border="0" class="table table-hover table-bordered dt-responsive table-responsive" style="width:100%" id="mySelection"></table>'
     );
 
     //initialize the DataTable object and put settings in
@@ -47,6 +47,7 @@ $(document).ready(function() {
             header: true,
             footer: true
         },
+        autoWidth: false,
       responsive: true,
       //responsive: {details: {type: false}},
       data: data,
@@ -60,11 +61,12 @@ $(document).ready(function() {
               },
               targets: [1,3]
             },
-           { visible: false,  targets: [ 3 ] }
+           { visible: false,  targets: [ 3 ] },
+           {searchable: false, orderable: false, targets: 0}
           ],
       scrollY:  500,
       //scrollX:  true,
-    //deferRender:    true,
+    deferRender:    true,
     //scroller:       true,
       order: [
         [2, "desc"]

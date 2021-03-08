@@ -22,9 +22,9 @@ h1{
   color:  #212f3c;
 }
 
-header {
+/*header {
   padding: 154px 0 100px;
-}
+}*/
 
 .index {
 padding: 100px 0 50px;
@@ -37,7 +37,10 @@ padding: 100px 0 50px;
 		table,
 		th {
 			text-align: center;
-		}
+		},
+    tbody td
+    {word-break: break-word;
+    vertical-align: top;}
 		/*make odd rows lightblue
 		.table-striped > tbody > tr:nth-child(odd) > td {
 			background-color: #6897BB;
@@ -55,7 +58,7 @@ footer a:hover
   }
 
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   header {
     padding: 120px 0 50px;
   }
